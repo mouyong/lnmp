@@ -163,6 +163,9 @@
 
     apt-get install libtool*
     apt-get install libxpm-dev
+    
+    ln -s /usr/lib/x86_64-linux-gnu/libXpm.so /usr/lib/
+    ln -s /usr/lib/x86_64-linux-gnu/libXpm.a /usr/lib/
 
     cd php-7.0.10
     ./configure --prefix=/usr/local/php --with-config-file-path=/usr/local/php/etc --with-libxml-dir=/usr/local/libxml2/ --with-jpeg-dir=/usr/local/jpeg9/ --with-png-dir=/usr/local/libpng/ --with-freetype-dir=/usr/local/freetype/ --with-gd=/usr/local/gd2/ --with-mcrypt=/usr/local/libmcrypt/ --enable-soap --enable-mbstring=all --enable-sockets --without-pear --with-xpm-dir=/usr/lib64/ --enable-fpm
